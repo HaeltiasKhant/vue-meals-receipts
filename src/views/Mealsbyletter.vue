@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="grid grid-cols-1 p-4 md:grid-cols-3 gap-8 md:p-8 ">
-		<MealItems v-for="meal in meals" :key="meal.idMeal" :meal="meal"></MealItems>
+		<Mealitems v-for="meal in meals" :key="meal.idMeal" :meal="meal"></Mealitems>
 	</div>
 
 	<div class="flex justify-center" v-if="!meals.length">
@@ -17,7 +17,7 @@
 <script setup>
 import { computed } from '@vue/reactivity';
 import store from '../store';
-import MealItems from '../components/MealItems.vue';
+import Mealitems from '../components/Mealitems.vue';
 import { useRoute } from 'vue-router';
 import { onMounted, watch } from 'vue';
 

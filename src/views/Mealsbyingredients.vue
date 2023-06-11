@@ -3,7 +3,7 @@
     <h1 class="p-4 md:p-8 text-4xl font-bold text-orange-500">Meals for {{ ingredient.strIngredient }}</h1>
   </div>
   <div class="grid grid-cols-1 p-4 md:grid-cols-3 gap-8 md:p-8 ">
-		<Mealitems v-for="meal of meals" :key="meal.idMeal" :meal="meal"></MealItems>
+		<Mealitems v-for="meal of meals" :key="meal.idMeal" :meal="meal"></Mealitems>
 	</div>
 </template>
 
